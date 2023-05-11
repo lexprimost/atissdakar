@@ -21,8 +21,8 @@
 
             <div class="w-full">
               <div class="flex flex-col space-y-4 items-start justify-start">
-                <p class="text-lg font-light tracking-widest leading-9 text-gray-900 uppercase">A R T I S T E</p>
-                <p class="text-3xl font-light tracking-widest leading-9 text-gray-900 uppercase">{{ artist.name }}</p>
+                <p class="text-lg font-light tracking-widest leading-9 text-black uppercase">A R T I S T</p>
+                <p class="text-3xl font-light tracking-widest leading-9 text-black uppercase">{{ artist.name }}</p>
                 <p class="text-sm font-light    leading-snug text-gray-500" v-html="artist.description"></p>
               </div>
             </div>
@@ -32,7 +32,7 @@
         <section class="my-16 ">
           <div class="bg-black bg-opacity-5 w-full py-16">
             <p
-              class="text-lg font-light tracking-widest leading-9 text-gray-900 uppercase mx-auto max-w-8xl sm:px-0 mb-5 text-center">
+              class="text-lg font-light tracking-widest leading-9 text-black uppercase mx-auto max-w-8xl sm:px-0 mb-5 text-center">
               A R T W O R K S</p>
             <Galery :artworks="artist.artworks"></Galery>
           </div>
@@ -45,40 +45,64 @@
 
     <footer>
 
-      <section>
-        <div class="relative bg-white">
-          <div class="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
-            <div class="px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-56 lg:pt-48 xl:col-span-6">
-              <div class="mx-auto max-w-2xl lg:mx-0">
-                <img class="h-11" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&amp;shade=600"
-                  alt="Your Company">
-                <div class="hidden sm:mt-32 sm:flex lg:mt-16">
-                  <div
-                    class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                    Anim aute id magna aliqua ad ad non deserunt sunt. <a href="#"
-                      class="whitespace-nowrap font-semibold text-indigo-600"><span class="absolute inset-0"
-                        aria-hidden="true"></span>Read more <span aria-hidden="true">→</span></a>
+      <section> 
+
+ <div class="bg-white"> 
+    <main>
+      <div class="relative isolate"> 
+        <div class="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48" aria-hidden="true">
+          <div class="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%)" />
+        </div>
+        <div class="overflow-hidden">
+          <div class="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
+            <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
+              <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
+              <p class="text-base font-semibold tracking-wide leading-normal text-gray-500 uppercase" >About</p>
+                <h1 class="text-4xl font-light tracking-tight text-black sm:text-6xl">Galerie Atiss Dakar</h1>
+                <p class="relative mt-6 text-base font-light leading-7 text-gray-600 sm:max-w-md lg:max-w-none">Established by Aïssa Dione, GALERIE ATISS DAKAR opened its doors during the first Dakar Biennial in 1996. Since then, the gallery has been a prominent participant in every edition of Dak'Art, showcasing a wide range of contemporary artists from Senegal and across the African continent. The gallery also takes part in other significant international art events. Through its involvement GALERIE ATISS DAKAR aims to support and promote the work of African artists to a wider audience and foster cross-cultural exchange.</p>
+             <br>
+               <p class="text-base font-normal leading-7  text-black"  >Tel : +221 33 824 80 48<br/>Email : info@galerieatissdakar.com<br/>Instagram : @galerieatissdakar</p>
+               <p class="text-base font-normal leading-7  text-black"  >Rue 23, Medina x Boulevard Martin Luther King (Corniche Ouest), Dakar, Senegal</p>
+                <div class="mt-10 flex items-center gap-x-6">
+                  <a href="https://galerieatissdakar.com" class="rounded-md bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Home</a>
+                  <a href="https://galerieatissdakar.com/contact-2/" class="text-sm font-semibold leading-6 text-black">Contact us <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+              <div class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
+                <div class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
+                  <div class="relative">
+                    <img src="https://galerieatissdakar.com/wp-content/uploads/2020/08/home4-1024x683.jpg" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
+                    <div class="pointer-events-none absolute inset-0 rounded-xl  " />
                   </div>
                 </div>
-                <h1 class="mt-24 text-4xl font-bold tracking-tight text-gray-900 sm:mt-10 sm:text-6xl">Data to enrich your
-                  online business</h1>
-                <p class="mt-6 text-lg leading-8 text-gray-600">Anim aute id magna aliqua ad ad non deserunt sunt. Qui
-                  irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
-                <div class="mt-10 flex items-center gap-x-6">
-                  <a href="#"
-                    class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get
-                    started</a>
-                  <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span
-                      aria-hidden="true">→</span></a>
+                <div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
+                  <div class="relative">
+                    <img src="https://galerieatissdakar.com/wp-content/uploads/2020/07/galerieinter-1024x683.jpg" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
+                    <div class="pointer-events-none absolute inset-0 rounded-xl  " />
+                  </div>
+                  <div class="relative">
+                    <img src="https://galerieatissdakar.com/wp-content/uploads/2020/07/accueilgal2-1024x720.jpg" alt="" class="aspect-[2/3]  h-72 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
+                    <div class="pointer-events-none absolute inset-0 rounded-xl  " />
+                  </div>
+                </div>
+                <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
+                  <div class="relative">
+                    <img src="https://galerieatissdakar.com/wp-content/uploads/2020/08/home1-1024x684.jpg" alt="" class="aspect-[2/3] h-60 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
+                    <div class="pointer-events-none absolute inset-0 rounded-xl ringv-1 rinvg-inset ring-blvack" />
+                  </div>
+                  <div class="relative">
+                    <img src="https://galerieatissdakar.com/wp-content/uploads/2020/07/showroom2-1024x683.jpg"  alt="" class="h-60 aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
+                    <div class="pointer-events-none absolute inset-0 rounded-xl  " />
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">
-              <img class="aspect-[3/2] w-full bg-gray-50 object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
-                src="https://galerieatissdakar.com/wp-content/uploads/2020/07/galerieinter-1024x683.jpg" alt="">
-            </div>
           </div>
         </div>
+      </div>
+    </main>
+  </div>
+      
       </section>
     </footer>
   </div>

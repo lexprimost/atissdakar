@@ -33,14 +33,14 @@
         <div class="hidden sm:ml-6  sm:flex align-middle items-center">
           <div class="flex space-x-4">
             <!-- Current: "bg-gray-900 text-white", Default: "text-black " -->
-            <a href="#" class=" text-black rounded-md px-3 py-2 text-sm font-medium" aria-current="page">ARTISTES</a>
-            <a href="#" class="text-black  rounded-md px-3 py-2 text-sm font-medium">EXPOSITIONS</a>
-            <a href="#" class="text-black  rounded-md px-3 py-2 text-sm font-medium">RÉSIDENCES</a>
-            <a href="#" class="text-black  rounded-md px-3 py-2 text-sm font-medium">FOIRES</a>
-            <a href="#" class="text-black  rounded-md px-3 py-2 text-sm font-medium">BIENNALES</a>
-            <a href="#" class="text-black  rounded-md px-3 py-2 text-sm font-medium">A PROPOS</a>
-            <a href="#" class="text-black  rounded-md px-3 py-2 text-sm font-medium">CONTACT</a>
-            <a href="#" class="text-black  rounded-md px-3 py-2 text-sm font-medium">EN</a>
+            <a href="https://galerieatissdakar.com/artistes-3" class=" text-black rounded-md px-3 py-2 text-sm font-medium" aria-current="page">ARTISTES</a>
+            <a href="https://galerieatissdakar.com/expositions-3/" class="text-black  rounded-md px-3 py-2 text-sm font-medium">EXPOSITIONS</a>
+            <a href="https://galerieatissdakar.com/residence/" class="text-black  rounded-md px-3 py-2 text-sm font-medium">RÉSIDENCES</a>
+            <a href="https://galerieatissdakar.com/art-fairs-2/" class="text-black  rounded-md px-3 py-2 text-sm font-medium">FOIRES</a>
+            <a href="https://galerieatissdakar.com/biennales/" class="text-black  rounded-md px-3 py-2 text-sm font-medium">BIENNALES</a>
+            <a href="https://galerieatissdakar.com/apropos/" class="text-black  rounded-md px-3 py-2 text-sm font-medium">A PROPOS</a>
+            <a href="https://galerieatissdakar.com/contact-2/" class="text-black  rounded-md px-3 py-2 text-sm font-medium">CONTACT</a>
+ 
           </div>
         </div>
       </div> 
