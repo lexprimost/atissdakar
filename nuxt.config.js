@@ -19,6 +19,14 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
+      script: [{
+        hid: "jquery",
+        src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+        type: "text/javascript",
+        defer: true,
+      }
+   
+    ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
