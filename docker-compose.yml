@@ -17,7 +17,7 @@ services:
       - APP_ENV= PROD
       - NODE_ENV=production
     ports:
-      - 2996:3004
+      - 1099:3000
   
 networks:
   atissdakar-network:  

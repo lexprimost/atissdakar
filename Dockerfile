@@ -26,7 +26,7 @@ EXPOSE 8080
 ENV NUXT_HOST=0.0.0.0
 
 #expose 8080 on the container
-ENV NUXT_PORT=8085
+ENV NUXT_PORT=8080
 
 
 # start app
