@@ -6,8 +6,8 @@
       :options="slickOptions"
     >
 
-        <div v-for="(artwork, index) of artworks" :key="index" class="inline-flex flex-col space-y-3 items-center justify-end"  >
-          <img class="shadow "  :src="artwork.image" />
+        <div v-for="(artwork, index) of artworks" :key="index" class=" inline-flex flex-col space-y-3 items-center justify-end"  >
+          <img class="shadow artwork-img "  :src="artwork.image" />
           <p class="text-xs tracking-widest leading-snug text-center uppercase">{{artwork.name}} <br />{{artwork.size}}</p>
         </div>
    
@@ -101,5 +101,19 @@ export default {
   /* the parent */
   .slick-list {
       margin: 0 -27px;
+  }
+
+  .artwork-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  //  cursor: pointer;
+    display: block;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 </style>

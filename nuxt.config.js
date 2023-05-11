@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'galery-atiss-dakar',
+    title: 'Galery Atiss Dakar - Viewing Room',
     htmlAttrs: {
       lang: 'en'
     },

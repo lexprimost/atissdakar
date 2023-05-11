@@ -30,7 +30,7 @@
           <img class="block h-8 w-auto lg:hidden" src="https://galerieatissdakar.com/wp-content/uploads/2019/11/logoatisse.png" alt="Your Company">
           <img class="hidden h-16 w-auto lg:block" src="https://galerieatissdakar.com/wp-content/uploads/2019/11/logoatisse.png" alt="Your Company">
         </div>
-        <div class="hidden sm:ml-6 sm:block">
+        <div class="hidden sm:ml-6  sm:flex align-middle items-center">
           <div class="flex space-x-4">
             <!-- Current: "bg-gray-900 text-white", Default: "text-black " -->
             <a href="#" class=" text-black rounded-md px-3 py-2 text-sm font-medium" aria-current="page">ARTISTES</a>
