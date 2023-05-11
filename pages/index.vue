@@ -1,42 +1,87 @@
 <template>
-  <section>
+  <div>
+    <section>
 
-    <Tutorial />
-    <Desk />
-    <section class="flex justify-center mt-12 mb-12">
-      <div class="sm:w-2/3 mx-6">
-        <p class="text-base leading-7 sm:text-center font-light ">We invite you to explore our website and discover the
-          extraordinary
-          talent within our artist portfolio. Join us on this artistic journey as we celebrate the power, beauty, and
-          significance of African art in the global contemporary art landscape.</p>
-      </div>
-    </section>
+      <Tutorial />
+      <Desk />
+      <section class="flex justify-center mt-12 mb-12">
+        <div class="sm:w-2/3 mx-6">
+          <p class="text-base leading-7 sm:text-center font-light ">We invite you to explore our website and discover the
+            extraordinary
+            talent within our artist portfolio. Join us on this artistic journey as we celebrate the power, beauty, and
+            significance of African art in the global contemporary art landscape.</p>
+        </div>
+      </section>
 
-    <section v-for="(artist, index) of artists" :key="index">
-      <div class="mx-auto max-w-8xl sm:px-0 px-6 lg:mt-20">
+      <section v-for="(artist, index) of artists" :key="index">
+        <div class="mx-auto max-w-8xl sm:px-0 px-6 lg:mt-20">
 
-        <div class="lg:inline-flex md:space-x-10 space-y-10 items-center  w-full ">
-          <img :src="artist.img" :alt="artist.name" class="lg:w-96 md:w-full sm:w-full ">
+          <div class="lg:inline-flex md:space-x-10 space-y-10 items-center  w-full ">
+            <img :src="artist.img" :alt="artist.name" class="lg:w-96 md:w-full sm:w-full ">
 
-          <div class="w-full">
-            <div class="flex flex-col space-y-4 items-start justify-start">
-              <p class="text-3xl font-light tracking-widest leading-9 text-gray-900 uppercase">{{ artist.name }}</p>
-              <p class="text-sm font-light    leading-snug text-gray-500" v-html="artist.description"></p>
+            <div class="w-full">
+              <div class="flex flex-col space-y-4 items-start justify-start">
+                <p class="text-lg font-light tracking-widest leading-9 text-gray-900 uppercase">A R T I S T E</p>
+                <p class="text-3xl font-light tracking-widest leading-9 text-gray-900 uppercase">{{ artist.name }}</p>
+                <p class="text-sm font-light    leading-snug text-gray-500" v-html="artist.description"></p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <section class="my-16 ">
-        <div class="bg-black bg-opacity-5 w-full py-16">
-          <Galery :artworks="artist.artworks"></Galery>
-        </div>
+        <section class="my-16 ">
+          <div class="bg-black bg-opacity-5 w-full py-16">
+            <p
+              class="text-lg font-light tracking-widest leading-9 text-gray-900 uppercase mx-auto max-w-8xl sm:px-0 mb-5 text-center">
+              A R T W O R K S</p>
+            <Galery :artworks="artist.artworks"></Galery>
+          </div>
+        </section>
       </section>
+
+
+
     </section>
 
+    <footer>
 
-
-  </section>
+      <section>
+        <div class="relative bg-white">
+          <div class="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
+            <div class="px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-56 lg:pt-48 xl:col-span-6">
+              <div class="mx-auto max-w-2xl lg:mx-0">
+                <img class="h-11" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&amp;shade=600"
+                  alt="Your Company">
+                <div class="hidden sm:mt-32 sm:flex lg:mt-16">
+                  <div
+                    class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                    Anim aute id magna aliqua ad ad non deserunt sunt. <a href="#"
+                      class="whitespace-nowrap font-semibold text-indigo-600"><span class="absolute inset-0"
+                        aria-hidden="true"></span>Read more <span aria-hidden="true">→</span></a>
+                  </div>
+                </div>
+                <h1 class="mt-24 text-4xl font-bold tracking-tight text-gray-900 sm:mt-10 sm:text-6xl">Data to enrich your
+                  online business</h1>
+                <p class="mt-6 text-lg leading-8 text-gray-600">Anim aute id magna aliqua ad ad non deserunt sunt. Qui
+                  irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+                <div class="mt-10 flex items-center gap-x-6">
+                  <a href="#"
+                    class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get
+                    started</a>
+                  <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span
+                      aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">
+              <img class="aspect-[3/2] w-full bg-gray-50 object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
+                src="https://galerieatissdakar.com/wp-content/uploads/2020/07/galerieinter-1024x683.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </div>
 </template>
 
 <script lang="ts">
@@ -93,7 +138,7 @@ export default Vue.extend({
         {
           name: "THEMBA KHUMALO",
           img: "https://i.ibb.co/xMvHLG5/Z6B7541.jpg",
-          description: `<p class="text-sm leading-snug text-gray-500" style="width: 738px;">Themba Khumalo is an Orange Farm raised, and now Johannesburg based visual artist, born in 1987.<br/>In his 10-year professional career, he’s had over 20 group show appearances, featured in just over 10 art fairs, and has had 5 solo shows – both locally and internationally.<br/>His current art subject Emhlabeni reflects the social, political, and spiritual landscape in current South Africa and the understanding of land as identity.<br/>Themba Khumalo looks at the subject of land measured through the lens of his drawings. These renditions portray pieces of land as a witness to the dispossession of the people, the use of illegal occupation as protest, and the loss of hope.<br/><br/>Contrasted with his use of Baba Wethu Osezulwini (prayer) which depicts land as a refuge, and space for faith and healing.<br/>Graduated as a printmaker at Artist Proof Studios, his preferred form of expression is with charcoal, coffee stains, pastel on paper, and at times produces etched prints. His work is also a reflection of his life experiences and close observations, in search of a narrative that seeks to find even the least form of justice, and retribution be it spiritually, socially, or politically.</p>`,
+          description: `<p class="text-sm leading-snug text-gray-500"  >Themba Khumalo is an Orange Farm raised, and now Johannesburg based visual artist, born in 1987.<br/>In his 10-year professional career, he’s had over 20 group show appearances, featured in just over 10 art fairs, and has had 5 solo shows – both locally and internationally.<br/>His current art subject Emhlabeni reflects the social, political, and spiritual landscape in current South Africa and the understanding of land as identity.<br/>Themba Khumalo looks at the subject of land measured through the lens of his drawings. These renditions portray pieces of land as a witness to the dispossession of the people, the use of illegal occupation as protest, and the loss of hope.<br/><br/>Contrasted with his use of Baba Wethu Osezulwini (prayer) which depicts land as a refuge, and space for faith and healing.<br/>Graduated as a printmaker at Artist Proof Studios, his preferred form of expression is with charcoal, coffee stains, pastel on paper, and at times produces etched prints. His work is also a reflection of his life experiences and close observations, in search of a narrative that seeks to find even the least form of justice, and retribution be it spiritually, socially, or politically.</p>`,
           artworks: [
             {
               name: 'Umthandazi, Monoprint',
@@ -127,34 +172,34 @@ export default Vue.extend({
         {
           name: "MALICK WELLI",
           img: "https://i.ibb.co/QF6n1Pq/IMG-1048.jpg",
-          description: `<p class="text-sm leading-snug text-gray-500" style="width: 738px;">MALICK WELLI is a Senegalese visual artist who lives and works in Dakar, Senegal. His work tackles themes of duality, spirituality, history and restitution of memory, pedagogy and displaced identity. Welli is interested in the convergence of religion with material influences; economics and power dynamics and how these shape visual culture. There is a questing for ecology and interdependence and how apparently independent events coincide and influence each other.<br/><br/>Welli brings these material community concerns into sharp contrast with individual spiritual needs.<br/><br/>Welli’s works have been collected and exhibited internationally including: « Sur le fil... « an exhibition organized by the 19m Chanel at the Theodore Monod Museum, IFAN (Institut Fondamental d’Afrique Noire) in Dakar (2023), Art x Lagos (2022), «Lightness of Being» a monographic exhibition at Galerie Atiss Dakar (2022); «Les Invincibles» at Dakar Biennale (2022); Blackstar Film Festival, Philadelphia, USA (2022); 1-54 Contemporary African Art Fair, New York (2021); EXPO CHGO, Chicago, USA (2019); Cairo Biennale, Egypt (2019); AKAA : Also Known As Africa fair, Paris, France (2018). His work has recently been acquired by the Chazen Museum of Art, Madison, Wisconsin, USA.</p>`,
+          description: `<p class="text-sm leading-snug text-gray-500"  >MALICK WELLI is a Senegalese visual artist who lives and works in Dakar, Senegal. His work tackles themes of duality, spirituality, history and restitution of memory, pedagogy and displaced identity. Welli is interested in the convergence of religion with material influences; economics and power dynamics and how these shape visual culture. There is a questing for ecology and interdependence and how apparently independent events coincide and influence each other.<br/><br/>Welli brings these material community concerns into sharp contrast with individual spiritual needs.<br/><br/>Welli’s works have been collected and exhibited internationally including: « Sur le fil... « an exhibition organized by the 19m Chanel at the Theodore Monod Museum, IFAN (Institut Fondamental d’Afrique Noire) in Dakar (2023), Art x Lagos (2022), «Lightness of Being» a monographic exhibition at Galerie Atiss Dakar (2022); «Les Invincibles» at Dakar Biennale (2022); Blackstar Film Festival, Philadelphia, USA (2022); 1-54 Contemporary African Art Fair, New York (2021); EXPO CHGO, Chicago, USA (2019); Cairo Biennale, Egypt (2019); AKAA : Also Known As Africa fair, Paris, France (2018). His work has recently been acquired by the Chazen Museum of Art, Madison, Wisconsin, USA.</p>`,
           artworks: [
-      {
+            {
               name: 'Untitled 2, Idol series, 2017, Pigment inkjet on fine art, Ed. 1/5',
               size: '90 x 120 cm',
               image: 'https://i.ibb.co/cTGYqSK/Untitled-2-Idol-series.png',
             },
-                     {
+            {
               name: 'Forgotten Paradise I, 2022, Pigment inkjet print on Hahnemuhle photo rag paper, Ed 1/1',
               size: '120 cm x 160 cm',
               image: 'https://i.ibb.co/3yRrK0Q/Malick-Welli-Forgotten-Paradise-1.jpg',
             },
-                        {
+            {
               name: 'Forgotten Paradise III, 2022, Pigment inkjet print on Hahnemuhle photo rag paper,Ed. 1/3 + 1AP ',
               size: '120 cm x 160 cm',
-              image: 'https://i.ibb.co/BCCb40q/Forgotten-Paridise-II-2022-Pigment-inkjet-print-on-Hahnemuhle-photo-rag-paper.jpg',
+              image: 'https://i.ibb.co/cTM31rq/Forgotten-Paridise-III-2022-Pigment-inkjet-print-on-Hahnemuhle-photo-rag-paper.jpg',
             },
             {
               name: 'Forgotten Paradise II, 2022, Pigment inkjet print on Hahnemuhle photo rag paper Ed 1/1',
               size: '120 cm x 160 cm',
               image: 'https://i.ibb.co/BCCb40q/Forgotten-Paridise-II-2022-Pigment-inkjet-print-on-Hahnemuhle-photo-rag-paper.jpg',
             },
-                          {
+            {
               name: 'Untitled 1, Idol series, 2017, Pigment inkjet on fine art, Ed. 3/5 + 2AP',
               size: '80 cm x 120 cm',
               image: 'https://i.ibb.co/WVG50WV/Untitled-1-Idol-series.png',
             }
-                 
+
 
 
 
