@@ -1,0 +1,24 @@
+
+version: '3.7'
+services:
+  atissdakar:
+    container_name: atissdakar
+    image: lexprimost/atissdakar:latest
+    restart: always
+    volumes:
+      - .:/src
+    networks:
+      - atissdakar-network
+    environment:
+      - API_BASE_URL=https://api.bookfoot.sn
+      - BROWSER_BASE_URL=https://api.bookfoot.sn
+      - DEV_API_BASE_URL= http://localhost:3000
+      - DEV_BROWSER_BASE_URL= http://localhost:3000
+      - APP_ENV= PROD
+      - NODE_ENV=production
+    ports:
+      - 2996:3004
+  
+networks:
+  atissdakar-network:  
+    external: true
