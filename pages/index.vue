@@ -147,10 +147,8 @@ export default Vue.extend({
 
       artists: [
         {
-          youtube: `<iframe  width="560" height="315" src="https://www.youtube.com/embed/KX_hD_vWHCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-`,
-          youtubeMobile: `<iframe    src="https://www.youtube.com/embed/KX_hD_vWHCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-`,
+          youtube: ``,
+          youtubeMobile: ``,
           name: "NGIMBI BAKAMBANA LUVE",
           img: "https://galerieatissdakar.com/wp-content/uploads/Artists/Ngimbi/profilephoto-600x900.jpg",
           description: `Ngimbi Bakambana Luve was born in Kinshasa, DRC, in 1977 and
@@ -229,8 +227,8 @@ export default Vue.extend({
 
         },
         {
-          youtube: `<iframe width="560" height="315" src="https://www.youtube.com/embed/KX_hD_vWHCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-`,         youtubeMobile: ``, name: "MALICK WELLI",
+          youtube: ``,         
+          youtubeMobile: ``, name: "MALICK WELLI",
           img: "https://i.ibb.co/QF6n1Pq/IMG-1048.jpg",
           description: `<p class="text-sm leading-snug text-gray-500"  >MALICK WELLI is a Senegalese visual artist who lives and works in Dakar, Senegal. His work tackles themes of duality, spirituality, history and restitution of memory, pedagogy and displaced identity. Welli is interested in the convergence of religion with material influences; economics and power dynamics and how these shape visual culture. There is a questing for ecology and interdependence and how apparently independent events coincide and influence each other.<br/><br/>Welli brings these material community concerns into sharp contrast with individual spiritual needs.<br/><br/>Welli’s works have been collected and exhibited internationally including: « Sur le fil... « an exhibition organized by the 19m Chanel at the Theodore Monod Museum, IFAN (Institut Fondamental d’Afrique Noire) in Dakar (2023), Art x Lagos (2022), «Lightness of Being» a monographic exhibition at Galerie Atiss Dakar (2022); «Les Invincibles» at Dakar Biennale (2022); Blackstar Film Festival, Philadelphia, USA (2022); 1-54 Contemporary African Art Fair, New York (2021); EXPO CHGO, Chicago, USA (2019); Cairo Biennale, Egypt (2019); AKAA : Also Known As Africa fair, Paris, France (2018). His work has recently been acquired by the Chazen Museum of Art, Madison, Wisconsin, USA.</p>`,
           artworks: [

@@ -1,15 +1,24 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Galery Atiss Dakar - Viewing Room',
+    title: 'Galerie Atiss Dakar - Viewing Room',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: 'Dakar, Senegal - GALERIE ATISS DAKAR is pleased to announce its participation in the upcoming 2023 edition of the 1-54 Contemporary African Art Fair, set to take place in New York. Following its particpation at the 1-54 fair in London in 2021, GALERIE ATISS DAKAR present a curated selection of artworks by African artists.' },
+      { name: 'format-detection', content: 'telephone=no' },
+      { property: "og:title", content: "Galerie Atiss Dakar - Viewing Room" },
+      { property: "og:description", content: "Dakar, Senegal - GALERIE ATISS DAKAR is pleased to announce its participation in the upcoming 2023 edition of the 1-54 Contemporary African Art Fair, set to take place in New York. Following its particpation at the 1-54 fair in London in 2021, GALERIE ATISS DAKAR present a curated selection of artworks by African artists." },
+      { property: "og:image", content: "https://galerieatissdakar.com/og-image.jpg" },
+      { property: "og:url", content: "https://viewinggalerieatissdakar.com" },
+      { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Galerie Atiss Dakar - Viewing Room" },
+      { property: "og:locale", content: "en_US" },
+
+
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

@@ -1,7 +1,8 @@
 <!-- Please remove this file from your project -->
 <template>
 <nav class="bg-white">
-  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">
+
+  <div class="mx-auto   px-2 sm:px-6 lg:px-8 ">
     <div class="relative flex h-16 items-center ">
       <div class="absolute inset-y-0 left-0 flex items-center md:hidden justify-between">
         <!-- Mobile menu button-->
@@ -27,8 +28,9 @@
       </div>
       <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
         <div class="flex flex-shrink-0 items-center">
-          <img class="block h-8 w-auto lg:hidden" src="https://galerieatissdakar.com/wp-content/uploads/2019/11/logoatisse.png" alt="Your Company">
-          <img class="hidden h-16 w-auto lg:block" src="https://galerieatissdakar.com/wp-content/uploads/2019/11/logoatisse.png" alt="Your Company">
+         <a href="https://galerieatissdakar.com"> <img class="block h-8 w-auto lg:hidden" src="https://galerieatissdakar.com/wp-content/uploads/2019/11/logoatisse.png" alt="Your Company"></a>
+         <a href="https://galerieatissdakar.com"> <img class="hidden h-9 w-auto lg:block" src="https://galerieatissdakar.com/wp-content/uploads/2019/11/logoatisse.png" alt="Your Company"></a>
+          
         </div>
         <div class="hidden sm:ml-6  md:flex align-middle items-center">
           <div class="flex space-x-4">
