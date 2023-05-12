@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section>
+    <section class="overflow-hidden">
 
       <Tutorial />
       <Desk />
@@ -25,11 +25,11 @@
                 <p class="text-3xl font-light tracking-widest leading-9 text-black uppercase">{{ artist.name }}</p>
                 <div class="flex md:flex-row flex-col col-span-2 md:row-span-2 md:space-x-10 space-y-6 md:space-y-0">
                   <p class="text-sm font-light    leading-snug text-gray-500" v-html="artist.description"></p>
-                  <div v-html="artist.youtube " class=" hidden sm:block">
+                  <div v-html="artist.youtube " class=" hidden md:block">
 
 
                   </div>
-                  <div v-html="artist.youtubeMobile" class="youtube-video block sm:hidden ">
+                  <div v-html="artist.youtubeMobile" class="youtube-video block md:hidden ">
 
 
                   </div>
@@ -345,7 +345,9 @@ export default Vue.extend({
 
 <style lang="scss">
 .youtube-video {
-  aspect-ratio: 16 / 9;
-  width: 100%;
+    iframe {
+      aspect-ratio: 16 / 9;
+      width: 100%;
+    }
 }
 </style>
