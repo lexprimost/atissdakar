@@ -6,8 +6,8 @@
       :options="slickOptions"
     >
 
-        <div v-for="(artwork, index) of artworks" :key="index" class=" inline-flex flex-col space-y-3 items-center justify-end"  >
-          <img class="shadow artwork-img "  :src="artwork.image" />
+        <div v-for="(artwork, index) of artworks" :key="index" class=" inline-flex flex-col space-y-3 items-center justify-end" v-viewer >
+          <img class="shadow artwork-img cursor-pointer "  :src="artwork.image"     />
           <p class="text-xs tracking-widest font-light leading-snug text-center upercase">{{artwork.name}} <br /><span class="text-gray-500">{{artwork.size}}</span></p>
         </div>
    
@@ -21,7 +21,6 @@ import Slick from "vue-slick";
 import "slick-carousel/slick/slick-theme.scss";
 export default {
     components: {
-
         Slick,
     },
     props: {
@@ -86,6 +85,18 @@ export default {
       },
     };
   },
+
+methods: {
+   show(artworks) {
+   console.log(artworks);
+   // return array  of image from this artworks parameter to pass it to the viewer
+   const imageArtworks = artworks.map((artwork) => artwork.image);
+      console.log(imageArtworks);
+      this.$viewerApi({
+       images: imageArtworks,
+      })
+    },
+  }
 }
 </script>
 

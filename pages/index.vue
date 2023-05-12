@@ -6,10 +6,8 @@
       <Desk />
       <section class="flex justify-center mt-12 mb-12">
         <div class="sm:w-2/3 mx-6">
-          <p class="text-base leading-7 sm:text-center font-light ">We invite you to explore our website and discover the
-            extraordinary
-            talent within our artist portfolio. Join us on this artistic journey as we celebrate the power, beauty, and
-            significance of African art in the global contemporary art landscape.</p>
+          <p class="text-base leading-7 sm:text-center font-light ">Dakar, Senegal - GALERIE ATISS DAKAR is pleased to announce its participation in the upcoming 2023 edition of the 1-54 Contemporary African Art Fair, set to take place in New York. Following its particpation at the 1-54 fair in London in 2021, GALERIE ATISS DAKAR present a curated selection of artworks by African artists.
+            </p>
         </div>
       </section>
 
