@@ -8,7 +8,7 @@
 
         <div v-for="(artwork, index) of artworks" :key="index" class=" inline-flex flex-col space-y-3 items-center justify-end"  >
           <img class="shadow artwork-img "  :src="artwork.image" />
-          <p class="text-xs tracking-widest leading-snug text-center uppercase">{{artwork.name}} <br />{{artwork.size}}</p>
+          <p class="text-xs tracking-widest font-light leading-snug text-center upercase">{{artwork.name}} <br /><span class="text-gray-500">{{artwork.size}}</span></p>
         </div>
    
     </slick>
