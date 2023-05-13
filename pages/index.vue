@@ -310,7 +310,7 @@ export default Vue.extend({
               image: 'https://i.ibb.co/FDH2kvx/2022-08-30-364.jpg',
             },
             {
-    name: 'Protection 6, 2019, Series of sculptural dress and jackets embellished with rosaries and medallions, Red Jacket',
+    name: 'Protection 6, 2019, Series of sculptural dress and jackets embellished with rosaries and medallions, Blue Jacket',
               size: '',
               image: 'https://i.ibb.co/tXJ7f6P/Blue-Jacket.jpg',
             }
@@ -320,11 +320,7 @@ export default Vue.extend({
               size: '',
               image: 'https://i.ibb.co/Jdtpgyq/Red-Jacket.jpg',
             },
-            {
-     name: 'Protection 6, 2019, Series of sculptural dress and jackets embellished with rosaries and medallions, Blue Jacket',
-              size: '',
-              image: 'https://i.ibb.co/rpC8xHv/l-esquive.jpg',
-            },
+ 
 
 
 
