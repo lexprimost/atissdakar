@@ -302,25 +302,36 @@ export default Vue.extend({
               youtube: `<iframe  src="https://www.youtube.com/embed/KX_hD_vWHCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 `, name: 'Protection 6, 2019, Series of sculptural dress and jackets embellished with rosaries and medallions, Silver dress',
               size: '',
-              image: 'https://i.ibb.co/hY2XYkr/2022-08-30-356.jpg',
+              image: 'https://i.ibb.co/0sJyzGg/IMG-5073-1.jpg',
             },
             {
       name: 'Protection 6, 2019, Series of sculptural dress and jackets embellished with rosaries and medallions, Silver dress',
               size: '',
               image: 'https://i.ibb.co/FDH2kvx/2022-08-30-364.jpg',
             },
+                        {
+    name: 'Protection 6, 2019, Series of sculptural dress and jackets embellished with rosaries and medallions, Blue Jacket',
+              size: '',
+              image: 'https://i.ibb.co/9h6K9Cw/IMG-5091.jpg',
+            },
             {
     name: 'Protection 6, 2019, Series of sculptural dress and jackets embellished with rosaries and medallions, Blue Jacket',
               size: '',
-              image: 'https://i.ibb.co/tXJ7f6P/Blue-Jacket.jpg',
+              image: 'https://i.ibb.co/vPd8xDb/IMG-4967.jpg',
             }
             ,
             {
      name: 'Protection 6, 2019, Series of sculptural dress and jackets embellished with rosaries and medallions, Red Jacket',
               size: '',
-              image: 'https://i.ibb.co/Jdtpgyq/Red-Jacket.jpg',
+              imageold: 'https://i.ibb.co/Jdtpgyq/Red-Jacket.jpg',
+              image: 'https://i.ibb.co/7tRF57C/IMG-5029.jpg'
             },
- 
+             {
+     name: 'Protection 6, 2019, Series of sculptural dress and jackets embellished with rosaries and medallions, Red Jacket',
+              size: '',
+              imageold: 'https://i.ibb.co/Jdtpgyq/Red-Jacket.jpg',
+              image: 'https://i.ibb.co/hHKDQ8s/IMG-5011.jpg'
+            },
 
 
 
